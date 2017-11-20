@@ -1,0 +1,9 @@
+---
+applications:
+- name: aspnet-core-visitcount
+  hostname: aspnet-core-visitcount
+  memory: 1024M
+  disk_quota: 2000M
+  buildpack: https://github.com/cloudfoundry-community/dotnet-core-buildpack
+  env:
+    CACHE_NUGET_PACKAGES: false
